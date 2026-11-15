@@ -1,0 +1,31 @@
+{
+  "id": "stremio-http-stream",
+  "name": "Stremio HTTP Streams (Series & Cartoons)",
+  "description": "Resolves direct HTTP/HLS streams for Western cartoons & series (like The Boondocks) via Simkl + any Stremio HTTP Stream Addon.",
+  "manifestURI": "",
+  "version": "1.0.0",
+  "author": "Custom",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "isDevelopment": true,
+  "payloadURI": "C:/PATH/TO/YOUR/SEANIME/DATA/extensions/stremio-http-stream.ts",
+  "userConfig": {
+    "requiresConfig": true,
+    "version": 1,
+    "fields": [
+      {
+        "type": "text",
+        "name": "simklClientId",
+        "label": "Simkl Client ID",
+        "default": ""
+      },
+      {
+        "type": "text",
+        "name": "addonBaseUrl",
+        "label": "Stremio Stream Addon Base URL (without /manifest.json)",
+        "default": ""
+      }
+    ]
+  }
+}
